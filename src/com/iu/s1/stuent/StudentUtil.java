@@ -2,9 +2,16 @@ package com.iu.s1.stuent;
 
 import java.util.Scanner;
 
-public class StudnetUtil {
+public class StudentUtil {
+	
+	private void makeStudents() {
+		// 학생의 수를 입력 받음
+		// 키보드로부터 이름, 번호, 국어, 영어, 수학 입력
+		// 학생들의 정보를 리턴
 
-	public student makeStudnet() {
+	}
+
+	public Student makeStudnet() {
 		// 키보드로부터 이름, 번호, 국어, 영어, 수학 입력 받고 리턴함. 1개만!
 		
 		Scanner sc = new Scanner(System.in);
@@ -19,14 +26,14 @@ public class StudnetUtil {
 		
 		// 1. 배열 - 같은 데이터타입 X
 		// 2. Class
-		Studnet studnent = new Studnet();
-		student.name = nate;
-		student.num = num;
-		student.kor = kor;
-		student.eng = eng;
-		student.math = math;
+		Student Student = new Student();
+		Student.name = name;
+		Student.num = num;
+		Student.kor = kor;
+		Student.eng = eng;
+		Student.math = math;
 		
-		return student;
+		return Student;
 	}
 	
 }

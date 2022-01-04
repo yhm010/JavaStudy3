@@ -1,8 +1,8 @@
 package com.iu.s1.stuent;
 
-public class Stuent {
+public class Student {
 	
-	String neme;
+	String name;
 	int num;
 	int kor;
 	int eng;
