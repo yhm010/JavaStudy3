@@ -3,8 +3,8 @@ package com.iu.s1.student;
 public class StudentView {
 
 	// 출력 전용
-	// viewStudents - 여러명의 학생의 모든 정보를 출력
 	
+	// vieStudents - 여러명의 학생의 모든 정보를 출력
 	public void viewStudents(Student [] student) {
 		for (int i = 0; i < student.length; i++) {
 			Student student1 = student[i];
