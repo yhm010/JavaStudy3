@@ -10,4 +10,19 @@ public class Student {
 
 	int total;
 	double avg;
+	
+	public void makeTotal() {
+		int total; // 지역변수
+//		System.out.println("참조변수 this");
+//		System.out.println("참조변수 this : "+ this);
+		this.total = this.kor + this.eng + this.math; // this
+		this.avg= this.total / 3.0; ////평균계산
+		
+		this.hello();// 참조메서드.메서드 this 지워도 된다.
+	}
+	
+	public void hello() {
+//		System.out.println("안녕하세요");
+		
+	}
 }

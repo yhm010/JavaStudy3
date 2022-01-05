@@ -9,6 +9,7 @@ public class StudentController {
 		Scanner sc = new Scanner(System. in);
 		boolean check = true;
 		StudentUtil studentUtil = new StudentUtil(); // 객체생성
+		studentUtil.initUtil(); // 초기화
 		StudentView studentView = new StudentView(); // 객체생성
 		Student [] students = null;
 		while (check) {
@@ -23,33 +24,32 @@ public class StudentController {
 			students = studentUtil.makeStudents();
 			break;
 		case 2 :
-			if(students != null) {
 			studentView.viewStudents(students);
+			if(students != null) {
+				studentView.viewStudents(students);
 			}else {
-				if(students==null) {
-					studentView.viewMessage("학생 정보가 없습니다");
-					continue;
-				}
-				studentView.viewMessage("학생 정보를 먼저 입력하세요.");
-				if(student != null) {
-					studentView.viewStudent(student);
-				}else {
-					studentView.viewMessage("검색결과가 없습니다.");
-				}
+				studentView.viewMessage("학생정보를 먼저 입력하세요");
 			}
 			break;
-		case 3 :
+		case 3:
+			if(students == null) {
+				studentView.viewMessage("학생 정보가 없습니다");
+				continue;
+			}
 			Student student = studentUtil.search(students);
-			
-			
+			if(student != null) {
+				studentView.viewStudent(student);
+			}else {
+				studentView.viewMessage("검색 결과가 없습니다");
+			}
 			break;
-			default :
-				check = !check;
-				break;
-		} // 스위치 끝
-		} // 와일 끝
-		
+		default :
+			//check = !check;
+			check=false;
+			break;
 		}
-	}
-
-
+		
+	//switch case
+	}//while 끝
+}//Main 끝
+}// class 끝

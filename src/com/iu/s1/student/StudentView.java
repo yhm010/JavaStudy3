@@ -13,6 +13,8 @@ public class StudentView {
 			System.out.println("국어 : " + student1.kor);
 			System.out.println("영어 : " + student1.eng);
 			System.out.println("수학 : " + student1.math);
+			System.out.println("총점 : " + student1.total);
+			System.out.println("평균 : " + student1.avg);
 		}
 	}
 	
@@ -23,6 +25,8 @@ public class StudentView {
 		System.out.println("국어 : " +student.kor);
 		System.out.println("영어 : " +student.eng);
 		System.out.println("수학 : " +student.math);
+		System.out.println("총점 : " + student.total);
+		System.out.println("평균 : " + student.avg);
 	}
 	
 	
