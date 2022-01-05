@@ -3,14 +3,14 @@ package com.iu.s1.student;
 public class StudentMain {
 	public static void main(String[] args) {
 		
-	StudentController sc = new StudentController();
-	sc.start();
-	
-	Student student = new Student();
-	student.name="iu";
-	student.kor=10;
-	student.math=10;
-	student.eng=10;
+		StudentController sc = new StudentController();
+		sc.start();
+
+		Student student = new Student();
+		student.name = "iu";
+		student.kor = 10;
+		student.math = 10;
+		student.eng = 10;
 //	student.hello();
 //	student.makeTotal();
 //	System.out.println("참조변수 student : " + student);
@@ -23,9 +23,8 @@ public class StudentMain {
 //	System.out.println("참조변수 student : "+ student2);
 //	student2.makeTotal();
 //	System.out.println("Student Total : " + student2.total);
-	
-			System.out.println("종료");
-		
+
+		System.out.println("종료");
 
 	}
 }

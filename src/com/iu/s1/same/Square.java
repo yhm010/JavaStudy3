@@ -1,23 +1,23 @@
 package com.iu.s1.same;
 
-import com.iu.s1.student.StudentUtil;
-
 public class Square {
 	
 	int garo;
 	int sero;
 	
-	public boolean same(Square s) {
+	public boolean same(Square s1, Square s2) {
 		//멤버변수 garo와 매개변수로 받은 객체의 garo가 같고
 		//멤버변수 sero와 매개변수로 받은 객체의 sero가 같으면 true 리턴
 		//하나라도 틀리면 false를 리턴
 		//this 활용
 		
-		SquareMain squareMain = new SquareMain(); // 객체생성
+		boolean check = s1.garo == s2.garo && s1.sero == s2.sero;
 		
-		
-		
-	
-	} // main 끝
-
+		if(check == true) {
+			System.out.println("정답!");
+		}else {
+			System.out.println("오답!");
+		}
+		return check;
+	}
 } // class 끝

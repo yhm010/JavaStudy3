@@ -4,26 +4,26 @@ import java.util.Scanner;
 
 public class StudentUtil {
 	Scanner sc;
-	
+
 	// 학생 객체를 생성하고 정보를 입력 받는 곳
 	public void initUtil() { // 초기화
 		this.sc = new Scanner(System.in);
 	}
-	
+
 	public void start() {
-		
+
 	}
-	
-	public Student search(Student [] students) {
+
+	public Student search(Student[] students) {
 		// 검색할 학생의 번호를 입력
 		// 입력 받은 번호와 일치하는 학생을 찾아서 리턴
-		
+
 		System.out.println("검색할 학생의 번호를 입력하세요.");
 		int num = this.sc.nextInt(); // this 생략 가능
-		
+
 		Student student = null;
-		for(int i=0;i<students.length;i++){
-			if(students[i].num == num) {
+		for (int i = 0; i < students.length; i++) {
+			if (students[i].num == num) {
 				System.out.println("학생을 찾았습니다.");
 				student = students[i];
 				break;
@@ -33,7 +33,7 @@ public class StudentUtil {
 	}
 
 	public Student[] makeStudents() {
-		
+
 		// 학생의 수를 입력 받음
 		System.out.println("학생 수 입력");
 		int count = sc.nextInt();
@@ -62,7 +62,7 @@ public class StudentUtil {
 
 	public Student makeStudent() {
 		// 키보드로 부터 이름, 번호, 국어 영어 수학 입력 리턴
-		
+
 		System.out.println("이름 입력");
 		String name = sc.next();
 		System.out.println("번호 입력");
