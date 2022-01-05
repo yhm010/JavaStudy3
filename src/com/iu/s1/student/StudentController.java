@@ -3,8 +3,6 @@ package com.iu.s1.student;
 import java.util.Scanner;
 
 public class StudentController {
-	
-	private static final Student Student = null;
 
 	public void start() {
 		
