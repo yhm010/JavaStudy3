@@ -3,6 +3,8 @@ package com.iu.s1.student;
 import java.util.Scanner;
 
 public class StudentUtil {
+	
+	// 학생 객체를 생성하고 정보를 입력 받는 곳
 
 	public Student[] makeStudents() {
 		Scanner sc = new Scanner(System.in);
