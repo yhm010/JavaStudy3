@@ -8,6 +8,7 @@ public class MethodMain {
 		
 		
 		System.out.println("MainMethod Start");
+		System.out.println("Confilct Test");
 		
 		// 객체 생성 코드
 		//new 클래스명();
