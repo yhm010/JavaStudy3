@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class StudentUtil {
 	Scanner sc;
 
+	// 생성자
+	// public StudentUtil(); { // 12:03분 어려워!!!!!!!!!!!!!!!
+//	}
+	
 	// 학생 객체를 생성하고 정보를 입력 받는 곳
 	public void initUtil() { // 초기화
 		this.sc = new Scanner(System.in);
