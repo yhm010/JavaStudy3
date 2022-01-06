@@ -6,16 +6,19 @@ public class StudentView {
 
 	// vieStudents - 여러명의 학생의 모든 정보를 출력
 	public void viewStudents(Student[] student) {
+
+
+		
 		for (int i = 0; i < student.length; i++) {
 			// Student student1 = student[i];
 			// this.viewStudent(student1);
 
-			this.viewStudent(student[i]);
+			this.view(student[i]);
 		}
 	}
 
 	// viewStudent - 학생의 모든 정보를 출력
-	public void viewStudent(Student student) {
+	public void view(Student student) {
 		System.out.println("이름 : " + student.name);
 		System.out.println("번호 : " + student.num);
 		System.out.println("국어 : " + student.kor);
@@ -30,6 +33,7 @@ public class StudentView {
 		System.out.println("------------------------");
 		System.out.println(message);
 		System.out.println("------------------------");
+		
 	}
 
 }

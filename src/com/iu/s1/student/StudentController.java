@@ -24,7 +24,6 @@ public class StudentController {
 				students = studentUtil.makeStudents();
 				break;
 			case 2:
-				studentView.viewStudents(students);
 				if (students != null) {
 					studentView.viewStudents(students);
 				} else {
@@ -38,7 +37,7 @@ public class StudentController {
 				}
 				Student student = studentUtil.search(students);
 				if (student != null) {
-					studentView.viewStudent(student);
+					studentView.view(student);
 				} else {
 					studentView.viewMessage("검색 결과가 없습니다");
 				}
